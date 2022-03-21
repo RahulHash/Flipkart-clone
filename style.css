@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100%;
+}
+
+.top-header{
+    display: flex;
+    background: #2874F0;
+    padding: 7.5px 15%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: sticky;
+    top:0;
+}
+
+.left-section, .right-section,.f-explore-plus{
+    display: flex;
+    align-items: center; 
+    width: 100%;
+}
+
+.right-section{
+    justify-content: flex-end;
+    gap: 2em;
+}
+
+/* for-left-section */
+
+.f-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.f-name>h2{
+    font-weight: bold;
+    font-family: 'Courgette', cursive;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.f-explore-plus{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #fff;
+    font-size: .75em;
+}
+
+.f-explore-plus>p>i{
+    color: gold;
+}
+
+.f-explore-plus>img{
+    width:12px;
+    height: 12px;
+}
+
+.f-searchbar{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
+
+.f-searchbar>input{
+    border: none;
+    width: 100%;
+    height: 2.5em;
+    padding-left:1em;
+    margin-left: 1em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.f-searchbar>input::placeholder{
+    font-family: 'Courgette', cursive;
+}
+
+.f-searchbar>i{
+    position: absolute;
+    right:1em;
+    color: #2874F0;
+    appearance: none;
+}
+
+/* for-right-section */
+
+.f-login>input{
+    color: #2874f0;
+    font-weight: bold;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 32px;
+    padding: 5px 40px;
+    border: 1px solid #dbdbdb;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+.f-more>a, .f-cart>a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.f-more>i, .f-cart>i{
+    color: #fff;
+    padding: 5px;
+    font-size: .65em;
+}
+
+.f-more, .f-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
