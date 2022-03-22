@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -17,14 +18,17 @@ body{
     background: #2874F0;
     padding: 7.5px 15%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    position: sticky;
+    position: fixed;
     top:0;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .left-section, .right-section,.f-explore-plus{
     display: flex;
     align-items: center; 
-    width: 100%;
+    /* width: 100%; */
+    flex: 1;
 }
 
 .right-section{
@@ -78,8 +82,17 @@ body{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.f-searchbar>input:focus{
+    outline: none;  
+    font-family: 'Roboto', sans-serif;
+}
+
+.f-searchbar>input::-webkit-search-cancel-button{
+    appearance: none;
+}
+
 .f-searchbar>input::placeholder{
-    font-family: 'Courgette', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 .f-searchbar>i{
@@ -124,5 +137,34 @@ body{
     cursor: pointer;
 }
 
+/* categories */
+
+.main-body{
+    margin-top:59px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #F1F3F6;
+}
+
+.f-categories{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    padding: 0 10%;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    padding: 20px 10px;
+}
+
+.category>img{
+    width: 50%;
+}
 
 
