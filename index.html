@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="carousel.css">
+    <script src="script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/f0adc41083.js"
       crossorigin="anonymous"
@@ -121,6 +123,25 @@
           <p>category9</p>
         </div>
       </div>
+
+      <!-- carousel -->
+      <section aria-label="Newest Photos">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Nature Image #1">
+            </li>
+            <li class="slide">
+              <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Nature Image #2">
+            </li>
+            <li class="slide">
+              <img src="https://images.pexels.com/photos/4245826/pexels-photo-4245826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Nature Image #3">
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
   </body>
 </html>
